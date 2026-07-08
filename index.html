@@ -1,71 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <!--app-head-->
-    
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="SANCTUS NOVA" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="twitter:card" content="summary_large_image" />
-    
-    
-    
-    
-    
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://15903589-39ed-4722-9c95-09cedb1c7678-00-lp5jzt2kukmi.worf.replit.dev/#website",
-          "name": "SANCTUS NOVA",
-          "description": "Measure your body, find your real-world size, and dress your metaverse avatar. One fit across every world.",
-          "url": "https://15903589-39ed-4722-9c95-09cedb1c7678-00-lp5jzt2kukmi.worf.replit.dev/"
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://15903589-39ed-4722-9c95-09cedb1c7678-00-lp5jzt2kukmi.worf.replit.dev/#organization",
-          "name": "SANCTUS NOVA",
-          "url": "https://15903589-39ed-4722-9c95-09cedb1c7678-00-lp5jzt2kukmi.worf.replit.dev/",
-          "logo": "https://15903589-39ed-4722-9c95-09cedb1c7678-00-lp5jzt2kukmi.worf.replit.dev/apple-touch-icon.png"
-        }
-      ]
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SANCTUS NOVA – Backup</title>
+  <meta name="description" content="Static backup site for SANCTUS NOVA." />
+  <link rel="icon" type="image/svg+xml" href="/sanctusnovasite/favicon.svg" />
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card: #171a22;
+      --muted: #9ba3b4;
+      --text: #f0f3f8;
+      --accent: #7aa2ff;
+      --line: #2a3040;
     }
-    </script>
-    <link rel="icon" type="image/svg+xml" href="/sanctusnovasite/favicon.svg" />
-    <link rel="manifest" href="/sanctusnovasite/manifest.webmanifest" />
-    <meta name="theme-color" content="#f2ede3" />
-    <link rel="apple-touch-icon" href="/sanctusnovasite/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="SANCTUS NOVA" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/sanctusnovasite/assets/index-Dd1TU__X.js"></script>
-    <link rel="stylesheet" crossorigin href="/sanctusnovasite/assets/index-Cv3a4ioL.css">
-    <title>SANCTUS NOVA — Your fit, everywhere</title>
-  <meta name="description" content="Measure once, then carry your true size into the real-world clothing catalog and your metaverse avatar wardrobe. One fit across every world." />
-  <link rel="canonical" href="https://15903589-39ed-4722-9c95-09cedb1c7678-00-lp5jzt2kukmi.worf.replit.dev/" />
-  <meta property="og:title" content="SANCTUS NOVA — Your fit, everywhere" />
-  <meta property="og:description" content="Measure once, then carry your true size into the real-world clothing catalog and your metaverse avatar wardrobe. One fit across every world." />
-  <meta property="og:url" content="https://15903589-39ed-4722-9c95-09cedb1c7678-00-lp5jzt2kukmi.worf.replit.dev/" />
-  <meta property="og:image" content="https://15903589-39ed-4722-9c95-09cedb1c7678-00-lp5jzt2kukmi.worf.replit.dev/opengraph.jpg" />
-  <meta property="og:image:alt" content="SANCTUS NOVA body measurement and virtual wardrobe preview" />
-  <meta property="og:image:width" content="1280" />
-  <meta property="og:image:height" content="720" />
-  <meta name="twitter:title" content="SANCTUS NOVA — Your fit, everywhere" />
-  <meta name="twitter:description" content="Measure once, then carry your true size into the real-world clothing catalog and your metaverse avatar wardrobe. One fit across every world." />
-  <meta name="twitter:image" content="https://15903589-39ed-4722-9c95-09cedb1c7678-00-lp5jzt2kukmi.worf.replit.dev/opengraph.jpg" />
-  <meta name="twitter:image:alt" content="SANCTUS NOVA body measurement and virtual wardrobe preview" />
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at 15% 15%, #1b1f2b, var(--bg) 45%);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 0.3px;
+    }
+    .badge {
+      border: 1px solid var(--line);
+      color: var(--accent);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      background: #121622;
+    }
+    .note {
+      color: var(--muted);
+      margin: 0 0 16px;
+      line-height: 1.5;
+    }
+    .grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 310px;
+      object-fit: cover;
+      display: block;
+      background: #0b0d12;
+    }
+    .meta {
+      padding: 10px 12px 12px;
+    }
+    .meta h3 {
+      margin: 0 0 4px;
+      font-size: 14px;
+      font-weight: 650;
+    }
+    .meta p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .links {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .links a {
+      text-decoration: none;
+      border: 1px solid var(--line);
+      background: #121622;
+      color: var(--text);
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 12px;
+    }
+    .links a:hover { border-color: var(--accent); color: var(--accent); }
+  </style>
 </head>
-  <body>
-    <div id="root"><!--app-html--></div>
-  </body>
+<body>
+  <main class="wrap">
+    <header class="head">
+      <h1>SANCTUS NOVA</h1>
+      <span class="badge">Static Backup (No Backend Required)</span>
+    </header>
+    <p class="note">
+      This backup is designed to load reliably on GitHub Pages. It avoids the original runtime dependencies
+      (auth/API server) that caused blank-screen failures in the compiled mirror build.
+    </p>
+
+    <section class="grid">
+      <article class="card">
+        <img src="/sanctusnovasite/assets/male-athletic-light-DM-bSaOq.webp" alt="Male athletic light model" />
+        <div class="meta">
+          <h3>Male – Athletic (Light)</h3>
+          <p>Mirror asset preview</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="/sanctusnovasite/assets/male-average-medium-CvwK2O99.webp" alt="Male average medium model" />
+        <div class="meta">
+          <h3>Male – Average (Medium)</h3>
+          <p>Mirror asset preview</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="/sanctusnovasite/assets/female-curvy-light-CAETslEo.webp" alt="Female curvy light model" />
+        <div class="meta">
+          <h3>Female – Curvy (Light)</h3>
+          <p>Mirror asset preview</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="/sanctusnovasite/assets/female-slim-medium-EjYgJzOA.webp" alt="Female slim medium model" />
+        <div class="meta">
+          <h3>Female – Slim (Medium)</h3>
+          <p>Mirror asset preview</p>
+        </div>
+      </article>
+    </section>
+
+    <div class="links">
+      <a href="/sanctusnovasite/atelier-homme/">Original mirrored atelier-homme route</a>
+      <a href="https://github.com/godsninja44-ai/sanctusnovasite">Repository</a>
+    </div>
+  </main>
+</body>
 </html>
